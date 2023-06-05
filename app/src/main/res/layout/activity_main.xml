@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/cameraView"
+        android:layout_width="355dp"
+        android:layout_height="373dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.083" >
+
+        <ImageView
+            android:id="@+id/capturedImageView"
+            android:layout_width="355dp"
+            android:layout_height="373dp"
+            android:scaleType="fitCenter" />
+    </androidx.camera.view.PreviewView>
+
+    <Button
+        android:id="@+id/takePicture"
+        android:layout_width="90dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/galleryView"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/galleryView"
+        android:layout_width="90dp"
+        android:layout_height="88dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/round_button_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/takePicture" />
+
+    <TextView
+        android:id="@+id/classified"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_button"
+        android:padding="13dp"
+        android:text="@string/make_a_photo"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/takePicture"
+        app:layout_constraintTop_toBottomOf="@+id/cameraView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintVertical_bias="0.5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="116dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
