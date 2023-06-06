@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/frame_5">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,7 +15,7 @@
             android:id="@+id/image_happiness"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="@drawable/happiness"
+
             android:text="@string/happiness"
             android:textColor="#FF0000"
             android:textSize="60sp"
@@ -27,7 +27,6 @@
             android:id="@+id/image_angry"
             android:layout_width="200dp"
             android:layout_height="200dp"
-            android:background="@drawable/anger"
             android:text="@string/angry"
             android:textColor="#FF0000"
             android:textSize="60sp"

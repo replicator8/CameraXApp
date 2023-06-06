@@ -2,7 +2,8 @@
     <string name="app_name">EmotionClassification</string>
     <string name="open_gallery">Open Gallery</string>
     <string name="take_picture">Take Picture</string>
-    <string name="make_a_photo">make a photo</string>
+    <string name="make_a_photo">need a photo</string>
     <string name="happiness">Happiness</string>
     <string name="angry">Angry</string>
+    <string name="it_s_a">It\'s a</string>
 </resources>
